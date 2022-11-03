@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #F4FBF7; 
+}
+
+.container {
+    max-width: 65%;
+    margin: auto;
+    
+}
+
+
+header {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+
+header nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 30px;
+}
+
+
+header nav input {
+    position: relative;
+    border: none;
+    background: rgba(221, 247, 232, 0.37);
+    color: black;
+    padding: 10px;
+    padding-right: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+header nav input:focus {
+   outline: none;
+}
+
+.search {
+    position: absolute;
+    margin: 0 8px;
+    color: gray;
+}
+
+
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+header ul .inbox {
+    color: green;
+}
+
+header ul .compose {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+header nav ul li {
+    list-style-type: none;  
+    margin-right: 20px;
+}
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 2px;
+    padding-left: 30px;
+    padding-right: 50px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  
+}
+
+ .section .repeat {
+  display: inline;
+  margin-left: 10px;
+}
+
+.select {
+    border: none;  
+}
+
+.select option {
+    background-color: white;
+}
+
+
+.box {
+    font-size: 0.8rem;
+    padding: 10px;
+    margin-bottom: 2px;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.hide {
+    display: none;
+}
+
+.date {
+    display: block;
+}
+
+.para1 {
+    display: inline;
+    position: absolute;
+    right: 70px;
+   
+}
+
+.bold {
+    
+    font-weight: bold; 
+}
+
+
+
