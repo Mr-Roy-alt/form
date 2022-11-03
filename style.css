@@ -1,140 +1,165 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    background: #F4FBF7; 
+  background: #f4fbf7;
 }
 
 .container {
-    max-width: 65%;
-    margin: auto;
-    
+  max-width: 65%;
+  margin: auto;
 }
 
-
 header {
-    background-color: white;
-    border: none;
-    border-radius: 5px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    padding: 10px;
-
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
 header nav {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px;
 }
 
-
 header nav input {
-    position: relative;
-    border: none;
-    background: rgba(221, 247, 232, 0.37);
-    color: black;
-    padding: 10px;
-    padding-right: 30px;
-    border-radius: 5px;
-    text-align: center;
+  position: relative;
+  border: none;
+  background: rgba(221, 247, 232, 0.37);
+  color: black;
+  padding: 10px;
+  padding-right: 30px;
+  border-radius: 5px;
+  text-align: center;
 }
 
 header nav input:focus {
-   outline: none;
+  outline: none;
 }
 
 .search {
-    position: absolute;
-    margin: 0 8px;
-    color: gray;
+  position: absolute;
+  margin: 0 8px;
+  color: gray;
 }
 
-
-
 header nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header ul .inbox {
-    color: green;
+  color: green;
 }
 
 header ul .compose {
-    background-color: green;
-    color: white;
-    padding: 5px;
-    border-radius: 3px;
+  background-color: green;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
 }
 
 header nav ul li {
-    list-style-type: none;  
-    margin-right: 20px;
+  list-style-type: none;
+  margin-right: 20px;
 }
 .section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 10px;
-    margin-bottom: 2px;
-    padding-left: 30px;
-    padding-right: 50px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 2px;
+  padding-left: 30px;
+  padding-right: 50px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
- .section .repeat {
+.section .repeat {
   display: inline;
   margin-left: 10px;
 }
 
 .select {
-    border: none;  
+  border: none;
 }
 
 .select option {
-    background-color: white;
+  background-color: white;
 }
-
 
 .box {
-    font-size: 0.8rem;
-    padding: 10px;
-    margin-bottom: 2px;
-    background-color: #fff;
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  font-size: 0.8rem;
+  padding: 10px;
+  margin-bottom: 2px;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-
 .hide {
-    display: none;
+  display: none;
 }
 
 .date {
-    display: block;
+  display: block;
 }
 
 .para1 {
-    display: inline;
-    position: absolute;
-    right: 70px;
-   
+  display: inline;
+  position: absolute;
+  right: 70px;
 }
 
 .bold {
-    
-    font-weight: bold; 
+  font-weight: bold;
 }
 
+/* Paginationation style starts here */
 
+ul {
+  list-style-type: none;
+}
 
+.hidden {
+  display: none;
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  justify-content: center;
+}
+
+.pagination-number,
+.pagination-button {
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: none;
+  margin: 0.25rem 0.25rem;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.2rem;
+}
+
+.pagination-number:hover,
+.pagination-button:not(.disabled):hover {
+  background: greenyellow;
+}
+
+.pagination-number.active {
+  color: #fff;
+  background: green;
+}
